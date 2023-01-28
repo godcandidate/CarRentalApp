@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e4b2d3abdc8645aaa016a578ae919966" Name="Diagram1">
+        <EntityTypeShape EntityType="CarRentalDbModel.CarRentalRecord" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="CarRentalDbModel.loginInfo" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="CarRentalDbModel.Role" Width="1.5" PointX="0.75" PointY="8" />
+        <EntityTypeShape EntityType="CarRentalDbModel.TypeofCar" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="CarRentalDbModel.userRole" Width="1.5" PointX="3" PointY="4.875" />
+        <AssociationConnector Association="CarRentalDbModel.FK_CarRentalRecord_TypeofCars" />
+        <AssociationConnector Association="CarRentalDbModel.FK_userRoles_loginInfo" />
+        <AssociationConnector Association="CarRentalDbModel.FK_userRoles_Roles" />
+        <AssociationConnector Association="CarRentalDbModel.FK_TypeofCars_TypeofCars" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
